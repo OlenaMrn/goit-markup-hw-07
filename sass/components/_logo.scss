@@ -1,15 +1,29 @@
-.logo.link {
+.logo {
   display: block;
-  margin-right: 93px;
-  padding-top: 24px;
-  padding-bottom: 24px;
-  color: #000000;
-  font-family: Raleway, sans-serif;
+  margin: 0;
+  padding: 0;
+  color:black;
+  font-family: $secondary-font;
   font-size: 26px;
   line-height: 1.4;
   text-decoration: none;
+
+    &--acentcolor {
+      color: $acent-color;
+      }
+    &--white {
+      color: #ffff;
+      }
+ }
+
+
+.logo--margpad { 
+  margin-right: 93px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  
 }
 
-.logo--acentcolor {
-  color: $acent-color;
-}
+ 
+
+

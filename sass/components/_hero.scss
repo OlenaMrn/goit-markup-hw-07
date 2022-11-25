@@ -1,0 +1,44 @@
+.section {
+
+  
+}
+.overlay {
+
+ @include spaceBetween ($type: center);
+
+  height: 600px;
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  margin-bottom: 0;
+ 
+  background-repeat: no-repeat;
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(/images/header-bgr.jpg);
+  background-color: $paragraf-text-color;
+}
+
+.hero {
+  text-align: center;
+  margin: 0;
+ 
+
+  &__titel {
+  margin-top: 0;
+  margin-bottom: 30px;
+
+  color: #ffffff;
+
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.4;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  }
+}
+
+.hero__button {
+  @extend %button;
+  min-width: 216px;
+}
