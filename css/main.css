@@ -219,7 +219,7 @@ textarea {
   margin-top: 0;
   margin-bottom: 0;
   background-repeat: no-repeat;
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(./images/header-bgr.jpg);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/header-bgr.jpg);
   background-color: #757575;
 }
 
