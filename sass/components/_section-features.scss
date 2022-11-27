@@ -1,8 +1,7 @@
-.feachers-list {
-    @extend %list;
-    display: flex;
+.features {
+  
 
-    &__titel {
+  &__titel {
         margin-top: 0px;
         margin-bottom: 2px;
         color: $primary-text-color;
@@ -13,10 +12,13 @@
         text-transform: uppercase;
         margin-bottom: 10px;
     }
-    
 }
 
-.feachers-list {
+ 
+    
+
+
+.features {
 
     &__text {
         color: $paragraf-text-color;
@@ -27,14 +29,12 @@
     }
 }
 
-.feachers-list__item + .feachers-list__item {
+.features__item + .features__item {
   margin-left: 30px;
 }
 
-.feachers-list__block {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.features__block {
+  @include spaceBetween ($type: center);
 
   padding: 0;
   margin-bottom: 30px;
