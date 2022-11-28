@@ -43,7 +43,7 @@
   line-height: 1.7;
 
   &--gray {
-    @extend %link;
+  @extend %link;
   display: block;
   margin-bottom: 0;
   margin-top: 9px;
@@ -65,6 +65,7 @@
 
 .subscribe-form__wrapper {
   display: flex;
+  position: relative;
 }
 
 .subscribe-form__wrapper input {
@@ -75,43 +76,36 @@
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
   background-color: #2f303a;
+  color: #ffffff;
+
+  &:hover,
+  &:focus-within {
+  outline: none;
+  border: 1px solid $acent-color;}
 }
 
 .subscribe-form__wrapper input::placeholder {
   color: rgba(255, 255, 255, 0.6);
 }
 
-.subscribe-form__wrapper input {
-  color: #ffffff;
-}
-
-.subscribe-form__wrapper input:focus-within {
-  outline: none;
-  border: 1px solid $acent-color;
-}
-
 .subscribe-form__button {
   position: relative;
   @extend %button;
   
-  display: block;
+
   padding-left: 28px;
   margin-left: 12px;
   margin-right: 0;
   min-width: 200px;
-    
   text-align: left;
   
 }
 
-.subscribe-button__wrapper {
-  position: relative;
-}
 
 .subscribe-form__icon {
   position: absolute;
   right: 28px;
-  transform: translate(0, -150%);
+  transform: translate(0, 50%);
   margin: 0;
   fill: white;
 }

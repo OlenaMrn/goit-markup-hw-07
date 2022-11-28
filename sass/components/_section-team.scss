@@ -1,11 +1,12 @@
-
-
-.team-list {
- @extend %list;
- @include spaceBetween;
+.team {
+  background-color: #f5f4fa;
 }
 
-.team-list__item {
+.teammate {
+  @include spaceBetween;
+}
+
+.teammate__item {
   background-color: #ffffff;
   width: 270px;
   height: 428px;
@@ -15,11 +16,11 @@
   border-radius: 0px 0px 4px 4px;
 }
 
-.team-list__card {
+.teammate__card {
   padding: 30px 10px 30px 10px;
 }
 
-.team-list__name {
+.teammate__name {
   margin-bottom: 0;
   margin-top: 0;
   font-weight: 500;
@@ -28,7 +29,7 @@
   text-align: center;
 }
 
-.team-list__position {
+.teammate__position {
   color: $paragraf-text-color;
   margin-top: 10px;
   margin-bottom: 0;

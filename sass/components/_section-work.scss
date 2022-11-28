@@ -1,20 +1,18 @@
-.section-work {
-  @extend %section;
-
-  padding-top: 0;
+.work {
+  padding-top: 0;  
 }
 
-.work-list {
+.work__list {
     @extend %list;
     @include spaceBetween;
 
 }
 
-.work-list__thumb {
+.work__item {
   position: relative;
 }
 
-.work-list__block {
+.work__block {
         position: absolute;
         bottom: 0;
         left: 0;
@@ -23,7 +21,7 @@
         background: rgba(47, 48, 58, 0.8);
     }
 
-.work-list__text {
+.work__text {
   margin: 0;
   text-align: center;
   padding-top: 27px;

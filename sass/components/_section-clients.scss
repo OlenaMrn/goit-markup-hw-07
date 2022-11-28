@@ -1,8 +1,8 @@
-.clients-list {
+.clients {
   @include spaceBetween;
 }
 
-.clients-list__link {
+.clients__link {
   @include spaceBetween ($type: center);
 
   padding: 0;
@@ -25,7 +25,7 @@
   }
 }
 
-.clients-list__logo {
+.clients__logo {
   fill: currentColor;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }

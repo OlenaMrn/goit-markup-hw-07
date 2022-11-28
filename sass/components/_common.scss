@@ -28,19 +28,8 @@ textarea {
   margin: 0;
   padding-top: 94px;
   padding-bottom: 94px;
-
-    &--gray {
-      background-color: #f5f4fa;
-
-    }
-
-    &--dark {
-      background-color: #2f303a;
-    }
-  }
+}
  
-
-
 .section-titel {
   color: $primary-text-color;
   margin-top: 0;
@@ -57,13 +46,12 @@ textarea {
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
-  display: flex;
-  }
+}
 
-  .list {
+.list {
     padding: 0;
     margin: 0;
     list-style: none;
-  }
+}
   
 

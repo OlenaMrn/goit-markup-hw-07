@@ -1,7 +1,9 @@
 .features {
-  
+    display: flex;
+    
 
-  &__titel {
+
+    &__titel {
         margin-top: 0px;
         margin-bottom: 2px;
         color: $primary-text-color;
@@ -11,14 +13,8 @@
         line-height: 1.2;
         text-transform: uppercase;
         margin-bottom: 10px;
+        
     }
-}
-
- 
-    
-
-
-.features {
 
     &__text {
         color: $paragraf-text-color;
@@ -27,14 +23,12 @@
         line-height: 1.7;
         margin: 0;
     }
-}
 
-.features__item + .features__item {
-  margin-left: 30px;
+
 }
 
 .features__block {
-  @include spaceBetween ($type: center);
+@include spaceBetween ($type: center);
 
   padding: 0;
   margin-bottom: 30px;
@@ -42,5 +36,10 @@
   border-radius: 4px;
   width: 270px;
   height: 120px;
+}
 
+
+
+.features__item + .features__item {
+  margin-left: 30px;
 }

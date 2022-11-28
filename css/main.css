@@ -12,7 +12,7 @@
   margin: -1px;
 }
 
-.cards-block, .filter-list, .social-media--left, .social-media, .team-list, .work-list, .contacts, .nav__list {
+.cards-block, .social-media--left, .social-media, .work__list, .contacts, .nav__list {
   padding: 0;
   margin: 0;
   list-style: none;
@@ -29,12 +29,6 @@
   color: #2196f3;
 }
 
-.section-work {
-  margin: 0;
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-
 .page-header {
   margin: 0;
   padding-top: 0;
@@ -49,7 +43,7 @@
   padding-right: 15px;
 }
 
-.filter-list__button, .subscribe-form__button, .hero__button {
+.filter__button, .subscribe-form__button, .hero__button {
   padding: 10px 32px;
   color: white;
   background-color: #2196f3;
@@ -94,12 +88,6 @@ textarea {
   padding-top: 94px;
   padding-bottom: 94px;
 }
-.section--gray {
-  background-color: #f5f4fa;
-}
-.section--dark {
-  background-color: #2f303a;
-}
 
 .section-titel {
   color: #212121;
@@ -117,7 +105,6 @@ textarea {
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
-  display: flex;
 }
 
 .list {
@@ -209,24 +196,18 @@ textarea {
   line-height: 1.2;
 }
 
-.overlay {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 600px;
-  max-width: 1600px;
+.hero {
+  background-color: #757575;
+  text-align: center;
   margin-left: auto;
   margin-right: auto;
   margin-top: 0;
   margin-bottom: 0;
   background-repeat: no-repeat;
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("./images/header-bgr.jpg");
-  background-color: #757575;
-}
-
-.hero {
-  text-align: center;
-  margin: 0;
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/header-bgr.jpg");
+  max-width: 1600px;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
 .hero__titel {
@@ -261,12 +242,15 @@ textarea {
   color: white;
 }
 
-.logo--margpad {
+.logo--right {
   margin-right: 93px;
   padding-top: 24px;
   padding-bottom: 24px;
 }
 
+.features {
+  display: flex;
+}
 .features__titel {
   margin-top: 0px;
   margin-bottom: 2px;
@@ -277,16 +261,11 @@ textarea {
   text-transform: uppercase;
   margin-bottom: 10px;
 }
-
 .features__text {
   color: #757575;
   font-size: 14px;
   line-height: 1.7;
   margin: 0;
-}
-
-.features__item + .features__item {
-  margin-left: 30px;
 }
 
 .features__block {
@@ -301,21 +280,25 @@ textarea {
   height: 120px;
 }
 
-.section-work {
+.features__item + .features__item {
+  margin-left: 30px;
+}
+
+.work {
   padding-top: 0;
 }
 
-.work-list {
+.work__list {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.work-list__thumb {
+.work__item {
   position: relative;
 }
 
-.work-list__block {
+.work__block {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -324,7 +307,7 @@ textarea {
   background: rgba(47, 48, 58, 0.8);
 }
 
-.work-list__text {
+.work__text {
   margin: 0;
   text-align: center;
   padding-top: 27px;
@@ -336,13 +319,17 @@ textarea {
   color: #ffffff;
 }
 
-.team-list {
+.team {
+  background-color: #f5f4fa;
+}
+
+.teammate {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.team-list__item {
+.teammate__item {
   background-color: #ffffff;
   width: 270px;
   height: 428px;
@@ -352,11 +339,11 @@ textarea {
   border-radius: 0px 0px 4px 4px;
 }
 
-.team-list__card {
+.teammate__card {
   padding: 30px 10px 30px 10px;
 }
 
-.team-list__name {
+.teammate__name {
   margin-bottom: 0;
   margin-top: 0;
   font-weight: 500;
@@ -365,7 +352,7 @@ textarea {
   text-align: center;
 }
 
-.team-list__position {
+.teammate__position {
   color: #757575;
   margin-top: 10px;
   margin-bottom: 0;
@@ -423,13 +410,13 @@ textarea {
   fill: white;
 }
 
-.clients-list {
+.clients {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.clients-list__link {
+.clients__link {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -442,15 +429,15 @@ textarea {
   color: #afb1b8;
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.clients-list__link:hover, .clients-list__link:focus {
+.clients__link:hover, .clients__link:focus {
   cursor: pointer;
   border: 1px solid #2196f3;
 }
-.clients-list__link:hover svg, .clients-list__link:focus svg {
+.clients__link:hover svg, .clients__link:focus svg {
   fill: #2196f3;
 }
 
-.clients-list__logo {
+.clients__logo {
   fill: currentColor;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -508,6 +495,7 @@ textarea {
 
 .subscribe-form__wrapper {
   display: flex;
+  position: relative;
 }
 
 .subscribe-form__wrapper input {
@@ -518,6 +506,11 @@ textarea {
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
   background-color: #2f303a;
+  color: #ffffff;
+}
+.subscribe-form__wrapper input:hover, .subscribe-form__wrapper input:focus-within {
+  outline: none;
+  border: 1px solid #2196f3;
 }
 
 .subscribe-form__wrapper input::-moz-placeholder {
@@ -532,18 +525,8 @@ textarea {
   color: rgba(255, 255, 255, 0.6);
 }
 
-.subscribe-form__wrapper input {
-  color: #ffffff;
-}
-
-.subscribe-form__wrapper input:focus-within {
-  outline: none;
-  border: 1px solid #2196f3;
-}
-
 .subscribe-form__button {
   position: relative;
-  display: block;
   padding-left: 28px;
   margin-left: 12px;
   margin-right: 0;
@@ -551,30 +534,26 @@ textarea {
   text-align: left;
 }
 
-.subscribe-button__wrapper {
-  position: relative;
-}
-
 .subscribe-form__icon {
   position: absolute;
   right: 28px;
-  transform: translate(0, -150%);
+  transform: translate(0, 50%);
   margin: 0;
   fill: white;
 }
 
-.filter-list {
+.filter {
   display: flex;
   align-items: center;
   justify-content: center;
   margin-bottom: 50px;
 }
-.filter-list li {
+.filter__item {
   margin-right: 4px;
   margin-left: 4px;
 }
 
-.filter-list__button {
+.filter__button {
   color: #212121;
   background-color: #f5f4fa;
   padding: 6px 22px;
@@ -584,7 +563,7 @@ textarea {
   line-height: 1.6;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.filter-list__button:hover, .filter-list__button:focus {
+.filter__button:hover, .filter__button:focus {
   color: #ffffff;
   background-color: #2196f3;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
@@ -606,6 +585,9 @@ textarea {
 }
 .card__link:hover, .card__link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+.card__link:hover .card__text, .card__link:focus .card__text {
+  transform: translate(0, -100%);
 }
 
 .card__description {
@@ -655,11 +637,6 @@ textarea {
   opacity: 0.9;
   padding: 63px 24px;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.card__link:hover .card__text,
-.card__link:focus .card__text {
-  transform: translate(0, -100%);
 }
 
 .backdrop {
