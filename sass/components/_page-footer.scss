@@ -81,11 +81,12 @@
   &:hover,
   &:focus-within {
   outline: none;
-  border: 1px solid $acent-color;}
-}
+  border: 1px solid $acent-color;
+  }
 
-.subscribe-form__wrapper input::placeholder {
+  &::placeholder {
   color: rgba(255, 255, 255, 0.6);
+  }
 }
 
 .subscribe-form__button {

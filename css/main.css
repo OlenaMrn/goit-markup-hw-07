@@ -241,7 +241,6 @@ textarea {
 .logo--white {
   color: white;
 }
-
 .logo--right {
   margin-right: 93px;
   padding-top: 24px;
@@ -512,15 +511,12 @@ textarea {
   outline: none;
   border: 1px solid #2196f3;
 }
-
 .subscribe-form__wrapper input::-moz-placeholder {
   color: rgba(255, 255, 255, 0.6);
 }
-
 .subscribe-form__wrapper input:-ms-input-placeholder {
   color: rgba(255, 255, 255, 0.6);
 }
-
 .subscribe-form__wrapper input::placeholder {
   color: rgba(255, 255, 255, 0.6);
 }
